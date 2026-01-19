@@ -1,0 +1,288 @@
+@font-face{
+    font-family: rejoice;
+    src: url(./SuisseIntl-Regular.ttf);
+}
+
+@font-face {
+    font-family: rejoy;
+    src: url(./SuisseIntl-Light.ttf);
+}
+
+*{
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+}
+
+html,body{
+    width: 100%;
+    height: 100%;
+}
+
+#page1{
+    cursor: pointer;
+    height: 100vh;
+    width: 100%;
+    background-color: #dadada;
+    position: relative;
+}
+
+#cursor {
+    height: 7.5vw;
+    width: 7.5vw;
+    background-color: #FF5F38;
+    border-radius: 50%;
+    position: fixed;
+    z-index: 9;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transform: translate(-50%,-50%);
+}
+
+#cursor h5 {
+    font-weight: 400;
+    font-family: "rejoice";
+}
+
+#page1 video {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    position: absolute;
+    filter: brightness(80%);
+    /* background-color: rgba(0, 0, 0, 0.9) */
+}
+
+#page1-content {
+    display: flex;
+    height: 100%;
+    width: 100%;
+    /* background-color: rgb(0, 0, 0); */
+    position: relative;
+    z-index: 10;
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    /* padding-bottom: vw; */
+}
+
+nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    padding: 3vw 3vw;
+    /* background-color: #FF5F38; */
+}
+
+nav h3 {
+    font-size: 1.4vw; 
+    font-family: "rejoice";
+    font-weight: 100;
+}
+
+nav h4 {
+    font-size: 1.4vw;
+    font-family: "rejoice";
+}
+
+#page1-content h1 {
+    font-family: "rejoice";
+    font-size: 30vw;
+    font-weight:100;
+    line-height: 28vw;
+    
+    /* margin-top: 14vh; */
+}
+
+#page1-content h1 span{
+    font-family: "rejoy";
+    font-weight: 100;
+    font-style: regular;
+    display: inline-block;
+}
+
+
+#page2 {
+    cursor:default;
+    height: 100vh;
+    width: 100%;
+    background-color: beige;
+}
+
+.page2-navbar {
+    /* background-color: white; */
+    height: 20vh;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    padding: 7px 3px;
+    border-bottom: 1px solid black;
+    margin-left: 35px;
+    margin-right: 35px;
+
+}
+
+.left {
+    font-family: "rejoice";
+    font-size: 1.2rem;
+    /* margin-top: 30px;
+    margin-left: 20px; */
+}
+
+.right {
+    font-family: "rejoice";
+    font-size: 1.2rem;
+    /* margin-top: 30px;
+    margin-right: 20px; */
+}
+
+.heading {
+    font-family: "rejoy";
+    font-weight: 500;
+    font-size: 3rem;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    padding: 0.2em 1em;
+}
+
+#page3 {
+    cursor: default;
+    font-family: "rejoy";
+    min-height: 100vh;
+    width:100%;
+    position: relative;
+    padding:3vw;
+}
+
+#page3-top{
+    /* background-color: #dadada; */
+    text-align: center;
+}
+
+#page3-top h4{
+    margin-bottom: 1vw;
+    font-size: 1vw;
+    font-weight: 500;
+}
+
+#page3-top h4 span{
+    cursor: pointer;
+    font-size: 0.7vw;
+    background-color: black;
+    color: white;
+    padding: 4px 10px;
+    border-radius: 10px;
+}
+
+#page3-top h2{
+    font-size: 4vw;
+    font-weight: 100;
+}
+
+#page3-elements{
+    height: 90vh;
+    width: 100%;;
+    background-color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 4em;
+}
+
+#page3-elements .box{
+    height: 100%;
+    width: 32.5%;
+    background-color: blue;
+    position: relative;
+}
+
+#page3-elements .box video{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    object-position: center;
+}
+
+#page3-elements .box img{
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    transition: all linear 0.5s;
+}
+
+#page3-elements .box:hover img{
+    opacity: 0;
+}
+
+#page5{
+    font-family: "rejoy";
+    height: 100vh;
+    width: 100%;
+    padding: 4vw 0;
+    position: relative;
+}
+
+#page5 h1{
+    font-size: 10vw;
+    border-bottom: 1px solid black;
+    width:96%;
+    margin-left: 2%;
+}
+
+#swiperdiv{
+    height: 60vh;
+    width: 100%;
+    /* background-color: red; */
+    position: relative;
+    margin-top: -1%;
+}
+
+.swiper {
+    width: 130%;
+    height: 100%;
+}
+
+.swiper-slide {
+    width: 400px;
+    text-align: center;
+    font-size: 18px;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+}
+
+.swiper-slide img {
+    display: inline-block;
+    width: 19%;
+    object-fit: cover;
+}
+
+#loader {
+    font-family:"rejoice";
+    text-decoration:underline;
+    height: 100%;
+    width: 100%;
+    position: fixed;
+    top: 0;
+    background-color: black;
+    z-index: 99;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    gap: 40px;
+}
+
+#loader h3{
+    font-size: 2vw;
+}
+
+
+
